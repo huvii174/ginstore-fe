@@ -1,0 +1,6 @@
+@import 'react-loading-skeleton/dist/skeleton.css';
+.info-input input,.info-input select, textarea {
+    height: 30px;
+    border: 1px solid #dedede;
+    margin-bottom: 10px;
+}

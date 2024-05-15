@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+  frontend:
+    image: gin-fe
+    ports:
+      - "3000:5000"
+    depends_on:
+      - backend
+
+  backend:
+    image: gin-be
+    ports:
+      - "3006:3000"

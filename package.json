@@ -38,6 +38,7 @@
     "react-show-more-text": "^1.6.2",
     "reactjs-popup": "^2.0.5",
     "redux": "^4.2.0",
+    "sass": "^1.77.1",
     "swiper": "^8.3.2",
     "use-dark-mode": "^2.3.1",
     "web-vitals": "^2.1.4",

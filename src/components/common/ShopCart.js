@@ -101,17 +101,16 @@ function ShopCart() {
 
         const getUser = await authApi.getProfile();
 
-        // if (getUser.status === 200) {
-        //     order.name = getUser.data?.name;
-        //     order.phone = getUser.data?.phone;
-        //     order.address = getUser.data?.address;
-        // } else {
-		//
-		// }
+        if (getUser.status === 200) {
+            order.name = getUser.data?.name;
+            order.phone = getUser.data?.phone;
+            order.address = getUser.data?.address;
+        } else {
+            order.name = name;
+            order.phone = phone;
+            order.address = address;
+		}
 
-		order.name = name;
-		order.phone = phone;
-		order.address = address;
         order.products = transactions;
         order.note = note;
         order.total_price = total;
